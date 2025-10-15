@@ -1,0 +1,119 @@
+/* 🌿 General Page Setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #cfd9df);
+  color: #2c3e50;
+  transition: 0.3s;
+}
+
+/* Header */
+.glass-header {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00b4d8;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #90e0ef;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.highlight {
+  color: #0077b6;
+}
+
+/* Cards */
+.intro-card, .resume-card, .bio-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  width: 85%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.intro-card:hover, .resume-card:hover, .bio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00b4d8;
+  transform: scale(1.05);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+/* Footer */
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

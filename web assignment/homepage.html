@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya Nayak - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Ananya Nayak's Website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Bio-data</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I'm Ananya, a 3rd-year CSE student. Passionate about programming, web development, and AI. This website showcases my resume and bio-data.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ananya Nayak</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('nav a').click(function(){
+                alert('You are navigating to ' + $(this).text() + ' page!');
+            });
+        });
+    </script>
+</body>
+</html>

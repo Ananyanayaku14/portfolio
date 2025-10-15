@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananya - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="glass-header">
+    <h1 class="fade-in">Welcome to Ananya’s Portfolio</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="contact.html" class="nav-link">Bio-data</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile-section">
+      <img src="C:\web assignment\profile.jpg.jpg" alt="Ananya" class="profile-pic">
+      <h2>Hello, I’m <span class="highlight">Ananya</span></h2>
+      <p>I’m a Computer Science student with interests in coding, web development, and learning new technologies. Explore my resume and bio-data below!</p>
+      <button onclick="alert('Thank you for visiting my website!')">Say Hello</button>
+    </section>
+
+    <section class="intro-card">
+	    <img src="C:\web assignment\profile.jpg.jpg" alt="Ananya's Photo" class="profile-pic">
+      <h2>About Me</h2>
+      <p>I love creating simple and elegant websites using HTML, CSS, and JavaScript. My goal is to become a skilled software developer with a focus on creativity and problem solving.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ananya | Portfolio Website</p>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+        $('.nav-link').hover(function(){
+            $(this).css('color','#00b4d8');
+        }, function(){
+            $(this).css('color','#ffffff');
+        });
+    });
+  </script>
+</body>
+</html>
+
